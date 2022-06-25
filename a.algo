@@ -1,0 +1,64 @@
+PROCEDURE dot_product(a,b)
+VAR
+    product:intger
+    i:intger
+BEGIN
+  FOR i FROM 1 TO M  DO
+   product = product + a[i] * b[i];  
+END
+ALGORITHM Dot product
+VAR
+product:intger
+   Set1 : ARRAY_OF INTEGER;
+    Set2 : ARRAY_OF INTEGER;
+    n:INTEGER
+BEGIN
+    read(n)
+   FOR i FROM 0 TO n-1  DO
+   {
+   read(v1[i])
+   }
+   FOR i FROM 0 TO n-1  DO{
+   read(v2[i]) 
+   }
+    dot_product(v1,v2)
+    if(product=0){
+        
+        write("the two vectors of given IR are orthogonal")
+    }
+    ELSE
+    write("the two vectors of given IR are not orthogonal")
+END
+_________________________________________________________________________________________________
+FUNCTION dot_product(a,b) :intger
+VAR
+   product.intger
+BEGIN
+     FOR i FROM 1 TO M  DO
+   product = product + a[i] * b[i]; 
+    RETURN (product) ;
+END
+ALGORITHM Dot product
+VAR
+product:intger
+   Set1 : ARRAY_OF INTEGER;
+    Set2 : ARRAY_OF INTEGER;
+    n:INTEGER
+BEGIN
+    read(n)
+   FOR i FROM 0 TO n-1  DO
+   {
+   read(v1[i])
+   }
+   FOR i FROM 0 TO n-1  DO{
+   read(v2[i]) 
+   }
+  
+    if(dot_product=0)
+    {
+        
+        write("the two vectors of given IR are orthogonal")
+    }
+    ELSE
+    write("the two vectors of given IR are not orthogonal")
+END
