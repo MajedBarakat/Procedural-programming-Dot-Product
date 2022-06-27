@@ -3,7 +3,8 @@ VAR
     ps:FOLAT; n:intger
     i:intger
 BEGIN
-  FOR i FROM 1 TO M  DO
+    sum:=0;
+  FOR i FROM 1 TO v1.length  DO
    ps = ps + v1[i] * v2[i];  
 END
 ALGORITHM Dot product
