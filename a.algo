@@ -1,10 +1,10 @@
-PROCEDURE dot_product(a,b)
+PROCEDURE dot_product(v1:ARRAY_OF FOLAT, var v2:ARRAY_OF FLOAT)
 VAR
-    product:intger
+    ps:FOLAT; n:intger
     i:intger
 BEGIN
   FOR i FROM 1 TO M  DO
-   product = product + a[i] * b[i];  
+   ps = ps + v1[i] * v2[i];  
 END
 ALGORITHM Dot product
 VAR
@@ -29,13 +29,13 @@ BEGIN
     ELSE
     write("the two vectors of given IR are not orthogonal")
 END
-_________________________________________________________________________________________________
-FUNCTION dot_product(a,b) :intger
+
+FUNCTION dot_product(v1,v2) :intger
 VAR
    product.intger
 BEGIN
      FOR i FROM 1 TO M  DO
-   product = product + a[i] * b[i]; 
+   product = product + v1[i] * v2[i]; 
     RETURN (product) ;
 END
 ALGORITHM Dot product
